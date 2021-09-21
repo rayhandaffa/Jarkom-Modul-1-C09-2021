@@ -11,7 +11,7 @@ NRP              | Nama
 Pada soal ini diminta kita untuk menyebutkan webserver yang digunakan pada <i>ichimaru.tech</i>. Untuk menjawab pertanyaan tersebut terdapat beberapa langkah yang harus dilakukan yaitu : <br>
 - Langkah pertama kita dapat melakukan display filter dengan command `http contains ""ichimarumaru.tech"`<br>
   ![ss-an](https://github.com/rayhandaffa/Jarkom-Modul-1-C09-2021/blob/main/ss-an/ss-no1-contains.jpg)
-- Selanjutnya, pilih salah satu paket.Kemudian, untuk melihat detail paket dengan cara klik kanan pada mouse dan pilih Follow -> TCP Stream 
+- Selanjutnya, pilih salah satu paket. Kemudian, untuk melihat detail paket dengan cara klik kanan pada mouse dan pilih Follow -> TCP Stream 
   ![ss-an](https://github.com/rayhandaffa/Jarkom-Modul-1-C09-2021/blob/main/ss-an/ss-no1-hasil.jpg)
 - Finally, webserver yang digunakan pada link tersebut dapat dilihat pada bagian di bawah ini : <br> 
   ![ss-an](https://github.com/rayhandaffa/Jarkom-Modul-1-C09-2021/blob/main/ss-an/ss-no1-detailhasil.jpg)
