@@ -35,3 +35,88 @@ Terdapat beberapa langkah untuk menemukan username dan password agar dapat masuk
  
 ## Soal No. 4 
 Untuk dapat menemukan paket-paket **mysql** dapat menggunakan display filter `mysql contains “select”`
+
+## Soal No. 5 
+
+## Soal No. 6 
+**Cari username dan password ketika melakukan login ke FTP Server!**
+
+Untuk mencari *username* dan *password* kita dapat menggnakan *display filter* `ftp contains "USER"` untuk mencari username. Dan untuk mencari password kita dapat menggunakan *display filter* `ftp contains "PASS"`.
+
+**USER**
+
+![6_1](/ss-an/6_1.png)
+
+**PASS**
+
+![6_2](/ss-an/6_2.png)
+
+## Soal No. 7
+**Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..., 499.zip. Simpan dan Buka file pdf tersebut. (Hint = nama pdf-nya "Real.pdf")**
+
+Langkah pertama yaitu dengan menggunakan *display filter* `ftp-data and frame contains "Real.pdf"` untuk mencari file .zip yang memiliki bernama "Real.pdf"
+
+**Filtering**
+
+![7_1](/ss-an/7_1.png)
+
+Kemudian *follow TCP STREAM* Selanjutnya ubah format ASCII ke RAW. Lalu save file .zip, selanjutnya buka file.
+
+**Hasil**
+
+![7_2](/ss-an/7_2.png)
+
+## Soal No. 8
+**Cari paket yang menunjukan pengambilan file dari FTP tersebut!**
+
+Untuk mencari paket tersebut, maka menggunakan *display filter* `ftp-data` lalu cari menggunakan ctrl + F find by string "RETR"
+
+**Hasil Filter**
+
+![8_1](/ss-an/8_1.png)
+
+Namun pada file 8-10.pcap tidak ada paket yang menunjukan file dari FTP Server.
+
+## Soal No. 9
+**Dari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut!**
+
+Cari menggunakan *display filter* `ftp-data` lalu cari nama file menggunakan ctrl + F fin by string "secret.zip". Lalu follow TCP Stream dan ubah format ASCII ke RAW. Lalu safe file .zip, selanjutnya buka file.
+
+**Hasil Filter**
+
+![9_1](/ss-an/9_1.png)
+
+Saat file secret.zip dibuka ternyata masih terkunci sehingga diperlukan untuk mencari *password*nya.
+
+**File secret.zip**
+
+![9_2](/ss-an/9_2.png)
+
+Dari soal No.10 kami menemukan passwordnya yaitu "d1b1langbukanapaapajugagapercaya". Sehingga file secret.zip dapat terbuka.
+
+**Isi file secret.zip**
+
+![9_3](/ss-an/9_3.png)
+
+## Soal No. 10
+**Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan password untuk membuka file rahasia yang ada di "secret.zip"!**
+
+Sama seperti cara nomor sebelumnya, tapi menggunakan format ASCII untuk mendapatkan file log nya. pada file history.txt merupakan barisan kode *bash* dimana kode tersebut melakukan pengambilan password dari file bukanapaapa.txt untuk membuka file secret.zip.
+
+**Hasil Filter**
+
+![10_2](/ss-an/10_2.png)
+
+**Isi file history.txt**
+
+![10_1](/ss-an/10_1.png)
+
+Lalu cari file bukanapa.txt menggunakan cara yang sama.
+
+**Hasil Filter**
+
+![10_3](/ss-an/10_3.png)
+
+**Isi file bukanapaapa.txt**
+
+![10_4](/ss-an/10_4.png)
