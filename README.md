@@ -52,7 +52,7 @@ Untuk masuk ke _portal.ichimarumaru.tech_ langkah pertama kita mencari username 
 
 **Login Website**
 
-Masukkan username dan password
+Masukkan username berupa `akakanomi` dan password `pemisah4lautan`
 
 ![5-2](/ss-an/5-2.jpeg)
 
