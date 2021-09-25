@@ -34,9 +34,31 @@ Terdapat beberapa langkah untuk menemukan username dan password agar dapat masuk
  ![ss-an](https://github.com/rayhandaffa/Jarkom-Modul-1-C09-2021/blob/main/ss-an/ss-no3-hasil.png)
  
 ## Soal No. 4 
-Untuk dapat menemukan paket-paket **mysql** dapat menggunakan display filter `mysql contains “select”`
+Untuk dapat menemukan paket-paket **mysql** yang menggunakan query **select** dapat menggunakan _display filter_ `mysql contains “select”`, setelah itu akan ditampilkan dua paket dimana satu paket request query `select username from users` dan satunya `select count(*) from users` 
+
+**Paket-paket yang memiliki request mysql select**
+
+![4](/ss-an/4.jpeg)
 
 ## Soal No. 5 
+Untuk masuk ke _portal.ichimarumaru.tech_ langkah pertama kita mencari username dan password, terdapat hint bahwa username dan password dapat dilihat pada _query insert_ maka dengan menggunakan _display filter_ `mysql contains “INSERT”`. Username dan password dapat ditemukan dalam Statement : `INSERT INTO users (username, password) VALUES (“akakanomi”, md5(“pemisah4lautan”)` dengan kata lain
+
+- Username: akakanomi
+- Password: pemisah4lautan
+
+**Paket MYSQL**
+
+![5-1](/ss-an/5-1.jpeg)
+
+**Website**
+Masukkan username dan password
+
+![5-2](/ss-an/5-2.jpeg)
+
+**Telah masuk**
+Terdapat pertanyaan konfigurasi kabel T568B dan jawabannya adalah `oranye putih, oranye, hijau putih, biru, biru putih, hijau, coklat putih, coklat`
+
+![5-3](/ss-an/5-3.jpeg)
 
 ## Soal No. 6 
 **Cari username dan password ketika melakukan login ke FTP Server!**
