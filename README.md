@@ -146,6 +146,7 @@ Untuk menampilkan paket-paket yang memiliki tujuan port 443 dapat menggunakan _d
 Untuk menampilkan paket-paket yang menuju ke **kemenag.go.id** dapat menggunakan _capture filter_ `dst host kemenag.go.id`
 
 **Paket-paket yang menuju _kemenag.go.id_**
+
 ![14](/ss-an/14.jpeg)
 
 ## Soal No. 15
