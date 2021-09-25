@@ -120,3 +120,42 @@ Lalu cari file bukanapa.txt menggunakan cara yang sama.
 **Isi file bukanapaapa.txt**
 
 ![10_4](/ss-an/10_4.png)
+
+## Soal No. 11
+Untuk menampilkan paket-paket yang berasal dari port 80 dapat menggunakan _display filter_ `tcp.srcport == 80`
+
+**_Display Filter_**
+![11](/ss-an/11.jpeg)
+
+## Soal No. 12
+Untuk menampilkan paket-paket yang memiliki port 21 (menuju maupun berasal) dapat menggunakan _displat filter_ `tcp.port == 21` atau _capture filter_ `port 21`
+
+**_Display Filter_**
+![12](/ss-an/12.jpeg)
+
+## Soal No. 13
+Untuk menampilkan paket-paket yang memiliki tujuan port 443 dapat menggunakan _display filter_ `tcp.dstport == 443` atau _capture filter_ `dst port 443`
+
+**_Display Filter_**
+![13](/ss-an/13.jpeg)
+
+## Soal No. 14
+Untuk menampilkan paket-paket yang menuju ke **kemenag.go.id** dapat menggunakan _capture filter_ `dst host kemenag.go.id`
+
+**Paket-paket yang menuju _kemenag.go.id_**
+![14](/ss-an/14.jpeg)
+
+## Soal No. 15
+Untuk menampilkan paket-paket yang berasal dari IP komputer kalian, sebelumnya untuk mengetahui ip komputer kalian dapat mengetik command `ipconfig` pada terminal, setelah itu akan muncul ip komputer kalian. Setelah itu baru dimasukkan ke dalam wireshark dimana untuk _capture filter_ dapat menggunakan `src host [IP Komputer]` atau _display filter_ `ip.src_host == [IP Komputer]`
+
+**ipconfig pada terminal**
+![15-1](/ss-an/15-1.jpeg)
+
+**Capture Filter**
+![15-2](/ss-an/15-2.jpeg)
+
+**Display Filter**
+![15-3](/ss-an/15-3.jpeg)
+
+## Kendala
+Praktikum modul satu ini kebetulan bertepakan dengan adanya masalah pada jaringan indiehome dan telkomsel sehingga menjadi kendala untuk mendownload file .pcap yang disediakan, ditambah juga dengan ukuran yang besar. Namun, tidak menjadi kendala yang besar karena salah satu anggota kelompok dapat menggunakan VPN agar file dapat terdownload. Selain itu, masalah jaringan juga menjadi kendala dalam berkomunikasi dan berdiskusi antar anggota kelompok. Pada soal nomor 11 - 15 tidak diberikan kejelasan apakah harus menampilkan _display filter_ atau _capture filter_ sehingga ditulis keduanya.
