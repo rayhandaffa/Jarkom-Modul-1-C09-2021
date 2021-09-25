@@ -50,13 +50,14 @@ Untuk masuk ke _portal.ichimarumaru.tech_ langkah pertama kita mencari username 
 
 ![5-1](/ss-an/5-3.jpeg)
 
-**Website**
+**Login Website**
 
 Masukkan username dan password
 
 ![5-2](/ss-an/5-2.jpeg)
 
-**Telah masuk**
+**Masuk ke Website**
+
 Terdapat pertanyaan konfigurasi kabel T568B dan jawabannya adalah `oranye putih, oranye, hijau putih, biru, biru putih, hijau, coklat putih, coklat`
 
 ![5-3](/ss-an/5-1.jpeg)
